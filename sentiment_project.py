@@ -45,7 +45,7 @@ if st.button("Predict", key="b1"):
         st.success(f"Positive ({prob[0][1]:.2f})")
         st.balloons()
         
-sample_review2=st.text_input([sample_review2])
+sample_review2=st.text_input("Your Review")
 if st.button("Predict second", key="b2"):
     pred = model.predict([sample_review2])
     prob = model.predict_proba([sample_review2])
