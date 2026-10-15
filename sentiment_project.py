@@ -33,7 +33,7 @@ st.sidebar.title("About Project")
 st.sidebar.text("This project predicts sentiment of given text....")
 
 st.sidebar.title("Contact us")
-st.sidebar.text("+919958966311")
+st.sidebar.text("+919717776422")
 
 sample_review=st.selectbox("Sample Reviews",options=['good food','quality was not good','awesome taste'])
 if st.button("Predict", key="b1"):
