@@ -36,23 +36,22 @@ st.sidebar.title("Contact us")
 st.sidebar.text("+919958966311")
 
 sample_review=st.selectbox("Sample Reviews",options=['good food','quality was not good','awesome taste'])
-if st.button("Predict",key="b1"):
-    pred=model.predict([sample_review])
-    prob=model.predict_proba([sample_review])
-    if pred[0]==0:
+if st.button("Predict", key="b1"):
+    pred = model.predict([sample_review])
+    prob = model.predict_proba([sample_review])
+    if pred[0] == 0:
         st.error(f"Negative ({prob[0][0]:.2f})")
     else:
         st.success(f"Positive ({prob[0][1]:.2f})")
-        st.balloons
+        st.balloons()
         
 sample_review2=st.text_input([sample_review2])
-if st.button("Predict",key="b2"):
-    pred=model.predict([sample_review2])
-    prob=model.predict_proba([sample_review2])
-    if pred[0]==0:
+if st.button("Predict second", key="b2"):
+    pred = model.predict([sample_review2])
+    prob = model.predict_proba([sample_review2])
+    if pred[0] == 0:
         st.error(f"Negative ({prob[0][0]:.2f})")
     else:
         st.success(f"Positive ({prob[0][1]:.2f})")
-        st.balloons
-
+        st.balloons()
 
