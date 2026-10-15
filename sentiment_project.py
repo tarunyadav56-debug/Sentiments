@@ -42,7 +42,7 @@ if st.button("Predict",key="b1"):
     if pred[0]==0:
         st.error(f"Negative ({prob[0][0]:.2f})")
     else:
-       st.success(f"Positive ({prob[0][1]:.2f})")
+        st.success(f"Positive ({prob[0][1]:.2f})")
         st.balloons
         
 sample_review2=st.text_input([sample_review2])
